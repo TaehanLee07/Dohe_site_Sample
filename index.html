@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원 페이지 웹사이트</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* Navigation Styling */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Parallax Styling */
+        .parallax {
+            background-image: url('your-parallax-background.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="section1">
+        <h2>Welcome to Section 1</h2>
+        <p>첫번째 섹션의 내용이 들어갑니다.</p>
+    </section>
+
+    <div class="parallax"></div> <!-- Parallax Effect -->
+
+    <section id="section2">
+        <h2>Welcome to Section 2</h2>
+        <p>두번쨰 섹션의 내용이 들어갑니다.</p>
+    </section>
+
+    <div class="parallax"></div> <!-- Parallax Effect -->
+
+    <section id="section3">
+        <h2>Welcome to Section 3</h2>
+        <p>세번째 섹션의 내용이 들어갑니다.</p>
+    </section>
+
+    <!-- Optional Footer -->
+    <footer>
+        <p>연락 정보들: Email, Phone, Address, etc.</p>
+    </footer>
+</body>
+
+</html>
