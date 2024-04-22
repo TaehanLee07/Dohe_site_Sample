@@ -16,19 +16,17 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Section Styling */
         section {
             padding: 60px 20px;
             text-align: center;
         }
 
-        /* Navigation Styling */
         nav {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background: #333;
+            background: #057cfc;
             color: white;
             padding: 10px;
             text-align: center;
@@ -38,13 +36,15 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
             text-decoration: underline;
+            color: #ffcc29;
         }
 
-        /* Parallax Styling */
+
         .parallax {
             background-image: url('your-parallax-background.jpg');
             background-attachment: fixed;
@@ -59,6 +59,8 @@
         <a href="#section1">Section 1</a>
         <a href="#section2">Section 2</a>
         <a href="#section3">Section 3</a>
+        <a href="#section4">Section 4</a>
+        <a href="#section5">Section 5</a>
     </nav>
 
     <!-- Sections -->
@@ -79,6 +81,20 @@
     <section id="section3">
         <h2>Welcome to Section 3</h2>
         <p>세번째 섹션의 내용이 들어갑니다.</p>
+    </section>
+
+    <div class="parallax"></div> <!-- Parallax Effect -->
+
+    <section id="section4">
+        <h2>Welcome to Section 4</h2>
+        <p>네번째 섹션의 내용이 들어갑니다.</p>
+    </section>
+
+    <div class="parallax"></div> <!-- Parallax Effect -->
+
+    <section id="section5">
+        <h2>Welcome to Section 5</h2>
+        <p>다섯번째 섹션의 내용이 들어갑니다.</p>
     </section>
 
     <!-- Optional Footer -->
