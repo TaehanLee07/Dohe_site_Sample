@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -19,6 +19,13 @@
         section {
             padding: 60px 20px;
             text-align: center;
+            border-bottom: 1px solid #ddd;
+            /* 섹션 구분 */
+            height: 100vh;
+            /* 페이지가 화면 가득 채우게 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         nav {
@@ -30,6 +37,8 @@
             color: white;
             padding: 10px;
             text-align: center;
+            z-index: 10;
+            /* 내비게이션이 항상 위에 있도록 설정 */
         }
 
         nav a {
@@ -41,65 +50,71 @@
 
         nav a:hover {
             text-decoration: underline;
-            color: #ffcc29;
+            color: #ffffff;
         }
 
-
         .parallax {
-            background-image: url('your-parallax-background.jpg');
+            background-image: url('images/backgroundPar.jpg');
             background-attachment: fixed;
             background-size: cover;
             height: 300px;
+            /* 파랄렉스 효과 */
+            border-bottom: 1px solid #ddd;
+            /* 구분선 */
         }
     </style>
 </head>
 
 <body>
     <nav>
-        <a href="#section1">Section 1</a>
-        <a href="#section2">Section 2</a>
-        <a href="#section3">Section 3</a>
-        <a href="#section4">Section 4</a>
-        <a href="#section5">Section 5</a>
+        <a href="#section1">도제산업 소개</a>
+        <a href="#section2">성일정보만에 도제 특징</a>
+        <a href="#section3">공지사항 및 일정</a>
+        <a href="#section4">교직원 소개</a>
+        <a href="#section5">졸업생 인터뷰</a>
     </nav>
 
-    <!-- Sections -->
+    <!-- 섹션 1: 도제산업 소개 -->
     <section id="section1">
-        <h2>Welcome to Section 1</h2>
-        <p>첫번째 섹션의 내용이 들어갑니다.</p>
+        <h2>도제산업 소개</h2>
+        <p>도제에 관한 설명, 도제 산업의 중요성 및 미래 전망.</p>
     </section>
 
-    <div class="parallax"></div> <!-- Parallax Effect -->
+    <div class="parallax"></div>
 
+    <!-- 섹션 2: 성일정보만에 도제 특징 -->
     <section id="section2">
-        <h2>Welcome to Section 2</h2>
-        <p>두번쨰 섹션의 내용이 들어갑니다.</p>
+        <h2>성일정보만에 도제 특징</h2>
+        <p>성일정보고등학교가 S등급인 이유와 도제 프로그램의 특징.</p>
     </section>
 
-    <div class="parallax"></div> <!-- Parallax Effect -->
+    <div class="parallax"></div>
 
+    <!-- 섹션 3: 공지사항 및 일정 -->
     <section id="section3">
-        <h2>Welcome to Section 3</h2>
-        <p>세번째 섹션의 내용이 들어갑니다.</p>
+        <h2>공지사항 및 일정</h2>
+        <p>도제 프로그램의 공지 및 일정.</p>
     </section>
 
-    <div class="parallax"></div> <!-- Parallax Effect -->
+    <div class="parallax"></div>
 
+    <!-- 섹션 4: 교직원 소개 -->
     <section id="section4">
-        <h2>Welcome to Section 4</h2>
-        <p>네번째 섹션의 내용이 들어갑니다.</p>
+        <h2>교직원 소개</h2>
+        <p>도제 부장선생님 및 도제부 교직원 소개와 인사말.</p>
     </section>
 
-    <div class="parallax"></div> <!-- Parallax Effect -->
+    <div class="parallax"></div>
 
+    <!-- 섹션 5: 졸업생 인터뷰 -->
     <section id="section5">
-        <h2>Welcome to Section 5</h2>
-        <p>다섯번째 섹션의 내용이 들어갑니다.</p>
+        <h2>졸업생 인터뷰</h2>
+        <p>졸업생의 인터뷰 및 현재 직장 소개.</p>
     </section>
 
-    <!-- Optional Footer -->
+    <!-- 풋터 -->
     <footer>
-        <p>연락 정보들: Email, Phone, Address, etc.</p>
+        <p>연락 정보: Email, Phone, Address, etc.</p>
     </footer>
 </body>
 
